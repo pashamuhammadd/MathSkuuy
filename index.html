@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathSkuuy</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="loadingScreen" class="loadingScreen">
+  <div class="loadingBox">
+    <img src="assets/loading.png" alt="MathSkuuy Loading" class="loadingLogo" />
+    <h2>MathSkuuy masih tidur</h2>
+    <p>Gausah buru-buru, kek jago aje ngerjainnyee...</p>
+    <div class="loadingDots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+  <div class="app">
+    <section id="loginScreen" class="screen active">
+      <div class="card">
+        <img src="assets/logo2.png" alt="Logo MathSkuuy" class="logo" />
+        <p class="subtitle">Tenang… ini bukan ujian hidup kok, cuma soal doang 😌</p>
+
+        <input
+          type="text"
+          id="playerName"
+          placeholder="Masukin nama, biar sejarah mencatat"
+          maxlength="20"
+          autocomplete="off"
+        />
+
+        <button id="startBtn">Gaskeuuun! 🚀</button>
+        <button id="goLeaderboardBtn" class="secondary">Lihat Ranking 🏆</button>
+      </div>
+    </section>
+
+    <section id="quizScreen" class="screen">
+      <div class="topBar">
+        <div id="questionCounter">Soal 1 / 20</div>
+        <div id="timer">0.0 detik</div>
+      </div>
+
+      <div class="card">
+        <h2 id="questionText"></h2>
+        <div id="optionsContainer" class="options"></div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="card">
+        <h2>Hasil Akhir 🎉</h2>
+        <p id="finalName"></p>
+        <p id="finalScore"></p>
+        <p id="finalCorrect"></p>
+        <p id="finalAvgTime"></p>
+        <p id="finalComment" class="finalComment"></p>
+
+        <button id="playAgainBtn">Main Lagi 🔁</button>
+        <button id="resultLeaderboardBtn" class="secondary">Lihat Ranking 🏆</button>
+      </div>
+    </section>
+
+    <div id="reactionPopup" class="popup hidden">
+  <div class="popupContent">
+    <img id="reactionSticker" src="" alt="Reaction Sticker" />
+    <p id="reactionText"></p>
+    <button id="nextQuestionBtn">Gas soal berikutnya 🚀</button>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <p>
+      Dibuat dengan penuh perjuangan (agak sedikit hahahihi) oleh <b>Moch Ibrahim Nur Husein</b>
+      dari <b>SMAI Al-Qodiriyah</b> ✨
+    </p>
+    <p id="footerRoast" class="footerSub"></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
